@@ -20,7 +20,10 @@ runs:
     
     - name: eslint
       shell: cmd
-      run: eslint -c .eslintrc.json --format json entry --output-file result.json && exit 0   
+      run: eslint -c .eslintrc.json --format json entry --output-file result.json && exit 0 
+    - name: eslint
+      shell: cmd
+      run:  
     - name: build
       env:
         OHOS_SDK_HOME: ${{ github.workspace }}\SDK
